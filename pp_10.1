@@ -1,0 +1,10 @@
+import random
+
+a = [random.sample(range(15),7)]
+b = [random.sample(range(20),12)]
+
+prod_a = [a for a in a if a not in b]
+prod_b = [b for b in b if b not in a]
+prod_c = prod_a.append(prod_b)
+
+print(prod_c)
