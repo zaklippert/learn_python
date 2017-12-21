@@ -1,0 +1,13 @@
+import random
+
+def function():
+    new_list = []
+    hi_num = int(input("what should the max number be: "))
+    numbers = int(input("How many numbers do you want in the list: "))
+    old_list = random.sample(range(hi_num),numbers)
+    new_list.append(old_list[0])
+    new_list.append(old_list[len(old_list) - 1])
+    print(old_list)
+    print(new_list)
+
+function()
