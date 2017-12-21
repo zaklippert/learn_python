@@ -1,0 +1,10 @@
+def prime():
+    num = int(input("Input a number: "))
+    ran = list(range(1,num+1))
+    divisors = [x for x in ran if num % x == 0]
+    if len(divisors)>2:
+        print(num, " is not prime")
+    else:
+        print(num, "is prime")
+
+prime()
