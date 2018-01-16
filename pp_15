@@ -1,0 +1,12 @@
+teststring = input("Give me a phrase: ")
+
+split = teststring.split()
+
+newstring = []
+x = 1
+
+while x < len(split) + 1:
+    newstring.append(split[-x])
+    x = x + 1
+
+print(newstring)
